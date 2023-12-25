@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".LabTestActivity">
+
+    <TextView
+        android:id="@+id/textViewDDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="24*7 Healthcare"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_200"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textViewLTTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diliver Location:Pune"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDDName"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/textViewDDName"
+        app:layout_constraintTop_toTopOf="@+id/textViewDDName"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:id="@+id/textViewBMDPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Test and Package"
+        android:textSize="20sp"
+        android:textColor="@color/yellowLight"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDDName"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/textViewDDName"
+        app:layout_constraintTop_toTopOf="@+id/textViewDDName"
+        app:layout_constraintVertical_bias="0.143" />
+
+    <ListView
+        android:id="@+id/listViewBM"
+        android:layout_width="wrap_content"
+        android:layout_height="490dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDPackageName" />
+
+    <Button
+        android:id="@+id/buttonBMDBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="@+id/listViewBM"
+        app:layout_constraintTop_toBottomOf="@+id/listViewBM"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <Button
+        android:id="@+id/buttonBMDAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to cart"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="@+id/listViewBM"
+        app:layout_constraintTop_toBottomOf="@+id/listViewBM"
+        app:layout_constraintVertical_bias="0.912" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

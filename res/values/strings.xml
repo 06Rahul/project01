@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Health Care</string>
+    <string name="loginText3">Register for new user</string>
+    <string name="loginBtn">Button</string>
+    <string name="loginPswdHint">Password</string>
+    <string name="loginUsername">Username</string>
+    <string name="loginText1">24*7 Healthcare</string>
+    <string name="loginText2">Login</string>
+
+</resources>
